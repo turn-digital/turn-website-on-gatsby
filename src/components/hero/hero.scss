@@ -1,0 +1,26 @@
+.hero {
+  background-color: $color-light-gray;
+  padding: 160px 0 170px;
+
+  &__title {
+    margin-bottom: 96px;
+    color: $color-light-black;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 144px;
+  }
+
+  &__link {
+    color: $color-light-black;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    text-decoration-line: underline;
+
+    // &::after {
+    //   content: url(../../assets/images/svg/arrow-right.svg);
+    //   margin-left: 44px;
+    //   vertical-align: sub;
+    // }
+  }
+}

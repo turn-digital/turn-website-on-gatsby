@@ -1,176 +1,138 @@
-import * as React from "react"
+import Hero from "../components/hero/Hero";
+import Cta from "../components/cta/Cta";
+import Head from "../components/head/Head";
+import Services from "../components/services/Services";
+import Contacts from "../components/contacts/Contacts";
+import Stories from "../components/stroies/Stories";
+import CareInfo from "../components/careInfo/CareInfo";
+import Footer from "../components/footer/Footer";
+import Layout from "../components/Layout";
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+import { useTranslation } from "gatsby-plugin-react-i18next";
+import { graphql } from "gatsby";
+import React from "react";
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+const Home = (props) => {
+  const { t } = useTranslation();
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+  const ctaInfo = {
+    tag: t("Cta_Tag"),
+    title: t("Cta_Title"),
+    content: t("Cta_Content"),
+  };
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+  const servicesInfo = {
+    tag: t("Services_Tag"),
+    title: t("Services_Title"),
+    practicalResultsTitle: t("Practical_Results_Content"),
+    practicalResultsContent: t("Practical_Results_Content"),
+  };
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+  const cardsInfo = [
+    {
+      title: t("Card_1_Title"),
+      content: t("Card_1_Content"),
+      tags: t("Card_1_Tags"),
+      key: 1,
+    },
+    {
+      title: t("Card_2_Title"),
+      content: t("Card_2_Content"),
+      tags: t("Card_2_Tags"),
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+      key: 2,
+    },
+    {
+      title: t("Card_3_Title"),
+      content: t("Card_3_Content"),
+      tags: t("Card_3_Tags"),
+      key: 3,
+    },
+    {
+      title: t("Card_4_Title"),
+      content: t("Card_4_Content"),
+      tags: t("Card_4_Tags"),
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+      key: 4,
+    },
+  ];
 
-const IndexPage = () => {
+  const storyInfo = {
+    tag: t("Stories_Tag"),
+    title: t("Stories_Title"),
+    Story1Title: t("Story_1_Title"),
+    Story2Title: t("Story_2_Title"),
+    Story3Title: t("Story_3_Title"),
+    Story1Content: t("Story_1_Content"),
+    Story2Content: t("Story_2_Content"),
+    Story3Content: t("Story_3_Content"),
+  };
+
+  const contactsInfo = {
+    tag: t("Contacts_Tag"),
+    header: t("Contacts_Header"),
+    content: t("Contacts_Content"),
+    name: t("Contacts_Name"),
+    phone: t("Contacts_Phone"),
+    email: t("Contacts_Email"),
+  };
+  const footerInfo = {
+    information_header: t("Footer_Information_Header"),
+    cookie_policy: t("Footer_Cookie_Policy"),
+    availability: t("Footer_Availability"),
+    privacy_policy: t("Footer_Privacy_Policy"),
+    contacts_header: t("Footer_Contacts_Header"),
+    phone: t("Footer_Phone"),
+    email: t("Footer_Email"),
+    address: t("Footer_Address"),
+    company_details: t("Footer_Company_Details_Header"),
+    SIA: t("Footer_SIA"),
+    BANK: t("Footer_BANK"),
+    ACCOUNT: t("Footer_ACCOUNT"),
+    copyright: t("Footer_Copyright"),
+  };
+
+  const careInfo = {
+    tag: t("Care_Info_Tag"),
+    title: t("Care_Info_Title"),
+    Card1Content: t("Care_Card_1_Content"),
+    Card2Content: t("Care_Card_2_Content"),
+  };
+
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
+    <>
+      <Layout />
+      <Head
+        title={t("Hero_Title")}
+        description={"Hello this is the home page of Turn.lv"}
       />
-    </main>
-  )
-}
+      <main>
+        <Hero />
+        <Cta ctaInfo={ctaInfo} />
+        <Services cardsInfo={cardsInfo} servicesInfo={servicesInfo} />
+        <Stories storyInfo={storyInfo} />
+        <Contacts contactsInfo={contactsInfo} />
+        <CareInfo careInfo={careInfo} />
+        <Footer footerInfo={footerInfo} />
+      </main>
+    </>
+  );
+};
 
-export default IndexPage
+export default Home;
 
-export const Head = () => <title>Home Page</title>
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(
+      filter: { ns: { in: ["common", "index"] }, language: { eq: $language } }
+    ) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

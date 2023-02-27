@@ -1,0 +1,51 @@
+.cta {
+    background-color: $color-green;
+    padding: 240px 0 264px;
+    position: relative;
+
+    &__title {
+        margin: 48px 0;
+        color: $color-light-black;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 80px;
+    }
+
+    &__text {
+        color: $color-light-black;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 48px;
+    }
+
+    &__circle {
+        background: rgba(47, 46, 65, 0.03);
+        border-radius: 50%;
+        position: absolute;
+
+        &--first {
+            width: 1124px;
+            height: 1124px;
+            right: -28%;
+            top: -378px;
+        }
+        &--second {
+            width: 870px;
+            height: 870px;
+            right: -21%;
+            top: -251px;
+        }
+        &--third {
+            width: 606px;
+            height: 606px;
+            right: -14%;
+            top: -119px;
+        }
+        &--fourth {
+            width: 348px;
+            height: 348px;
+            right: -7%;
+            top: 10px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+@import "../components/header/header";
+@import "../components/cta/cta";
+@import "../components/hero/hero";
+
+.wrapper {
+    @include container();
+}
