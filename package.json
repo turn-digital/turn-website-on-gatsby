@@ -1,8 +1,8 @@
 {
-  "name": "turn-gatsby-website",
+  "name": "gatsby-check",
   "version": "1.0.0",
   "private": true,
-  "description": "turn-gatsby-website",
+  "description": "gatsby-check",
   "author": "Vladyslav Tkachenko",
   "keywords": [
     "gatsby"
@@ -15,11 +15,17 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^5.7.0",
+    "gatsby": "^5.6.1",
+    "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-sass": "^6.7.0",
+    "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-sitemap": "^6.7.0",
+    "gatsby-source-filesystem": "^5.6.0",
+    "gatsby-transformer-sharp": "^5.7.0",
+    "i18next": "^22.4.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.58.3"
+    "react-i18next": "^12.1.5"
   }
 }
