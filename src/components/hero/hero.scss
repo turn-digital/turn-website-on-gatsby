@@ -1,26 +1,55 @@
 .hero {
   background-color: $color-light-gray;
-  padding: 160px 0 170px;
+  padding: 88px 0;
 
   &__title {
     margin-bottom: 96px;
     color: $color-light-black;
     font-weight: 700;
-    font-size: 120px;
-    line-height: 144px;
+    font-size: 48px;
+    line-height: 64px
   }
 
   &__link {
+    padding: 4px;
     color: $color-light-black;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 20px;
+    line-height: 32px;
     text-decoration-line: underline;
 
-    // &::after {
-    //   content: url(../../assets/images/svg/arrow-right.svg);
-    //   margin-left: 44px;
-    //   vertical-align: sub;
-    // }
+    svg {
+      width: 12px;
+      height: 20px;
+      margin-left: 24px;
+      vertical-align: middle;
+    }
+
+    &:focus {
+      outline: none;
+      text-decoration: underline;
+      border: 2px solid $color-green;
+    }
+  }
+
+  @include size-tablet() {
+    padding: 160px 0 170px;
+
+    &__title {
+      font-size: 120px;
+      line-height: 144px;
+    }
+  
+    &__link {
+      padding: 10px;
+      font-size: 32px;
+      line-height: 48px;
+  
+      svg {
+        width: 18px;
+        height: 32px;
+        margin-left: 44px;
+      }
+    }
   }
 }

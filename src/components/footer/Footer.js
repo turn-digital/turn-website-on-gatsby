@@ -20,6 +20,8 @@ const Footer = (props) => {
   return (
     <>
       <Header />
+      <p>{phone}</p>
+      <p>{phone}</p>
     </>
   );
 };
