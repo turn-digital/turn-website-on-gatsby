@@ -82,6 +82,7 @@
 
     @include size-laptop() {
         &__title {
+            width: 70%;
             font-size: 72px;
             line-height: 80px;  
             
