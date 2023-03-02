@@ -24,7 +24,7 @@ const Home = (props) => {
   const servicesInfo = {
     tag: t("Services_Tag"),
     title: t("Services_Title"),
-    practicalResultsTitle: t("Practical_Results_Content"),
+    practicalResultsTitle: t("Practical_Results_Title"),
     practicalResultsContent: t("Practical_Results_Content"),
   };
 

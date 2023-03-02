@@ -20,7 +20,7 @@
 
    
 
-    @include size-tablet() {
+    @include size-laptop() {
         padding: 240px 0 264px;
     
         &__title {

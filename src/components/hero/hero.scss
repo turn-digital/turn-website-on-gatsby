@@ -32,7 +32,7 @@
     }
   }
 
-  @include size-tablet() {
+  @include size-laptop() {
     padding: 160px 0 170px;
 
     &__title {
