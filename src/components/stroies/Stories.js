@@ -38,7 +38,7 @@ const Stories = (props) => {
                 </svg>
                 </Link>
               </div>
-              <div className="stories__block-grid">
+              <div className="stories__block-grid stories__block-grid--mob">
                 <img className="stories__img stories__item--first" src={imageFirst} alt='e-Saeima'/>
                 <img className="stories__img stories__item--second" src={imageSecond} alt='tiesibsargs'/>
                 <img className="stories__img stories__item--third" src={imageThird} alt='csp'/>

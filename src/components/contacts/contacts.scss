@@ -24,8 +24,16 @@
             margin-bottom: 40px;
         }
 
-        &--hover:hover {
+        &--hover {
+            &:hover {
             text-decoration: underline;
+            }
+
+            &:focus-visible {
+                outline: none;
+                text-decoration: underline;
+                box-shadow: 0 0 0 2px $color-light-black;
+            }
         }
 
         &--bold {
