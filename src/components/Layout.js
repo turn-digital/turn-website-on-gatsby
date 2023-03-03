@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header/Header";
-import Footer from "./footer/Footer";
+// import Footer from "./footer/Footer";
 import Head from "./head/Head";
 import "../styles/style.scss";
 
@@ -12,8 +12,8 @@ const Layout = ({ children, footerInfo }) => {
   return (
     <>
       <Head />
-      {/* <Header />
-      <div>
+      <Header />
+      {/* <div>
         <main>{children}</main>
         <Footer footerInfo={footerInfo} />
       </div> */}
