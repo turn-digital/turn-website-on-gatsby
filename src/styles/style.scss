@@ -8,6 +8,8 @@
 @import "../components/services/services";
 @import "../components/stroies/stories";
 @import "../components/hero/hero";
+@import "../components/contacts/contacts";
+@import "../components/careInfo/care-info";
 
 .wrapper {
     @include container();

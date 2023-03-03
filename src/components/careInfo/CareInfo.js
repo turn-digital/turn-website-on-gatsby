@@ -4,10 +4,16 @@ const CareInfo = (props) => {
   const { tag, title, Card1Content, Card2Content } = props.careInfo;
   return (
     <>
-      <div>{tag}</div>
-      <div>{title}</div>
-      <div>{Card1Content}</div>
-      <div>{Card2Content}</div>
+      <section className="care-info">
+        <div className="wrapper">
+          <p className="care-info__text">{tag}</p>
+          <h2 className="care-info__title">{title}</h2>
+         <ul>
+          <li><div>{Card1Content}</div></li>
+          <li><div>{Card2Content}</div></li>
+         </ul>
+        </div>
+      </section>
     </>
   );
 };

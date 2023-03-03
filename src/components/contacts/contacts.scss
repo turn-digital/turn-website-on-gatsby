@@ -1,0 +1,83 @@
+.contacts {
+    background-color: $color-green;
+    padding: 64px 0;
+    position: relative;
+
+    &__title {
+        margin: 32px 0;
+        color: $color-light-black;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    &__text {
+        display: inline-block;
+        color: $color-light-black;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        text-decoration: none;
+        margin-bottom: 8px;
+        
+        &--margin {
+            margin-bottom: 40px;
+        }
+
+        &--hover:hover {
+            text-decoration: underline;
+        }
+
+        &--bold {
+            font-weight: 700;
+        }
+    }
+
+   
+
+    @include size-laptop() {
+        padding: 160px 0;
+    
+        &__title {
+            margin: 48px 0;
+            font-size: 72px;
+            line-height: 80px;
+        }
+    
+        &__text {
+            font-size: 28px;
+            line-height: 48px;
+        }
+
+        &__circle {
+            background: rgba(47, 46, 65, 0.03);
+            border-radius: 50%;
+            position: absolute;
+    
+            &--first {
+                width: 1124px;
+                height: 1124px;
+                right: -740px;
+                bottom: -490px;
+            }
+            &--second {
+                width: 870px;
+                height: 870px;
+                right: -580px;
+                bottom: -360px;
+            }
+            &--third {
+                width: 606px;
+                height: 606px;
+                right: -410px;
+                bottom: -226px
+            }
+            &--fourth {
+                width: 348px;
+                height: 348px;
+                right: -240px;
+                bottom: -100px;
+            }
+        }
+    }
+}

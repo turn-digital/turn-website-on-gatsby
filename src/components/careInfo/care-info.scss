@@ -1,0 +1,36 @@
+.care-info {
+    background-color:$color-beige;
+    padding: 64px 0;
+
+    &__title {
+        margin: 32px 0;
+        color: $color-light-black;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    &__text {
+        color: $color-light-black;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+   
+
+    @include size-laptop() {
+        padding: 160px 0;
+    
+        &__title {
+            margin-bottom: 96px;
+            font-size: 72px;
+            line-height: 80px;
+        }
+    
+        &__text {
+            font-size: 28px;
+            line-height: 48px;
+        }
+    }
+}
