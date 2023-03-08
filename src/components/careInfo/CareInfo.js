@@ -14,7 +14,7 @@ const CareInfo = (props) => {
           <li className="care-info__item">
             <img className="care-info__img" src={LogoSchoolio} alt="logo schoolio WP"/>
             <p className="care-info__desc">{Card1Content}</p>
-            <a className="care-info__link" href="www.schooliowp.lv">www.schooliowp.lv
+            <a className="care-info__link" target='_blank' href="www.schooliowp.lv">www.schooliowp.lv
             <svg className="care-info__svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
               <mask id="path-1-outside-1_750_2066" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22" fill="black">
               <rect fill="white" width="22" height="22"/>
@@ -29,7 +29,7 @@ const CareInfo = (props) => {
           <li className="care-info__item">
           <img className="care-info__img" src={LogoPieklustamiba} alt="logo Pieklustamiba"/>
             <p className="care-info__desc">{Card2Content}</p>
-            <a className="care-info__link" href="www.pieklustamiba.lv">www.pieklustamiba.lv
+            <a className="care-info__link" target='_blank' href="www.pieklustamiba.lv">www.pieklustamiba.lv
             <svg className="care-info__svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
               <mask id="path-1-outside-1_750_2066" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22" fill="black">
               <rect fill="white" width="22" height="22"/>

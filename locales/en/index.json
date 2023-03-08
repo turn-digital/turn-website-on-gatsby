@@ -61,5 +61,17 @@
   "Footer_SIA": "SIA \"Turn Digital\"Reg. Nr: 40203026165",
   "Footer_BANK": "Bank: Swedbank A/S, S.W.I.F.T.: HABALV22",
   "Footer_ACCOUNT": "Account: LV48HABA0551042639577",
-  "Footer_Copyright": "© 2023 Turn Digital, Latvia"
+  "Footer_Copyright": "© 2023 Turn Digital, Latvia",
+
+  "OtherStories_Tag": "Business system redesign",
+  "OtherStories_Header": "Business system redesign",
+  "OtherStories_Title_1": "title 3 digital",
+  "OtherStories_Title_2": "Introducing user-centric approach in a financial institution",
+  "OtherStories_Title_3": "Business system redesign",
+  "OtherStories_Content_1": "Business system redesign",
+  "OtherStories_Content_2": "Business system redesign",
+  "OtherStories_Content_3": "Business system redesign",
+  "OtherStories_Button_Text_1": "Business system redesign",
+  "OtherStories_Button_Text_2": "Business system redesign",
+  "OtherStories_Button_Text_3": "Business system redesign"
 }

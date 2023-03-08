@@ -5,7 +5,12 @@ import React from "react";
 const WebsiteRedesign = (props) => {
   const { t } = useTranslation();
 
-  return <>{t("website-redesign-content")}</>;
+  return <>
+    {t("website-redesign-content")}
+    <div>
+
+    </div>
+    </>;
 };
 
 export default WebsiteRedesign;
