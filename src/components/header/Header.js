@@ -7,10 +7,6 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu)
-  }
-
   // if(toggleMenu) {
   //   const link = document.querySelector("#focus")
   //   link.focus()
@@ -50,11 +46,11 @@ const Header = () => {
             <Link className='header__link' to="/services">Story</Link>
             <Link className='header__link' to="/services">Services</Link>
             <Link className='header__link' to="/contacts">Contacts</Link>
-            <button className='header__button header__button--close' onClick={toggleNav}>X</button>
+            <button className='header__button header__button--close' onClick={() => setToggleMenu(!toggleMenu)}>X</button>
           </nav>
           )}
           </div>
-        <button className='header__button' onClick={toggleNav}>
+        <button className='header__button' onClick={() => setToggleMenu(!toggleMenu)}>
           <img src={MenuOpen} alt="open menu"/>
         </button>
         </div>
