@@ -11,6 +11,19 @@ const Header = () => {
     setToggleMenu(!toggleMenu)
   }
 
+  // if(toggleMenu) {
+  //   const link = document.querySelector("#focus")
+  //   link.focus()
+  // }
+
+//   const handleEsc = (event) => {
+//     if (event.keyCode === 27) {
+//      alert('Close')
+//    }
+//  };
+
+//  window.addEventListener('keydown', handleEsc);
+
   useEffect(() => {
 
     const changeWidth = () => {
@@ -27,13 +40,13 @@ const Header = () => {
 
   return (
     <>
-      <div className='wrapper'>
+      <header className='wrapper'>
           <div className='header'>
           <img className='header__logo' src={Logo} alt="logo"/>
           <div className='header__menu'>
           {(toggleMenu || screenWidth > 1024) && (
           <nav className='header__nav'>
-            <Link className='header__link' to="/">Home</Link>
+            <Link className='header__link' id='focus' to="/">Home</Link>
             <Link className='header__link' to="/services">Story</Link>
             <Link className='header__link' to="/services">Services</Link>
             <Link className='header__link' to="/contacts">Contacts</Link>
@@ -45,7 +58,7 @@ const Header = () => {
           <img src={MenuOpen} alt="open menu"/>
         </button>
         </div>
-      </div>
+      </header>
     </>
   );
 };

@@ -1,0 +1,117 @@
+.footer {
+    background-color: $color-light-black;
+    padding: 72px 0;
+    
+    &__box {
+        padding-bottom: 24px;
+        border-bottom: 1px solid $color-dark-blue;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-light-gray;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-bottom: 2px solid $color-green;
+        }
+
+        &:focus-visible {
+            outline: none;
+            text-decoration: underline;
+            box-shadow: 0 0 0 2px $color-green;
+        }
+    }
+
+    &__text {
+        display: block;
+        text-decoration: none;
+        color: $color-light-gray;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+
+        &--hover {
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:focus-visible {
+                outline: none;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__title {
+        color: $color-light-gray;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    &__list {
+        padding: 24px 0 74px;
+    }
+
+    &__item {
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include size-tablet() {
+        padding: 160px 0 105px;
+
+        &__nav {
+            display: block;
+            padding: 10px 0;
+            background-color: transparent;
+        }
+
+        &__link {
+            margin-left: 64px;
+        }
+
+        &__box {
+            padding-bottom: 32px;
+        }
+
+        &__list {
+            padding: 40px 0 90px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            margin-bottom: 0;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+}
