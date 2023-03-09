@@ -32,22 +32,9 @@ const UserCentricApproach = (props) => {
 
   const mainStoryInfo = {
     story_header: t("Story_Header"),
-    paragraph_1_content: t("Paragraph_1_Content"),
-    paragraph_2_content: t("Paragraph_2_Content"),
-    paragraph_3_content: t("Paragraph_3_Content"),
-    paragraph_4_content: t("Paragraph_4_Content"),
-    paragraph_5_content: t("Paragraph_5_Content"),
-    paragraph_6_content: t("Paragraph_6_Content"),
-    paragraph_7_content: t("Paragraph_7_Content"),
-    paragraph_8_content: t("Paragraph_8_Content"),
-
-    paragraph_title_1: t("Paragraph_Title_1"),
-    paragraph_title_2: t("Paragraph_Title_2"),
-    paragraph_title_3: t("Paragraph_Title_3"),
-
+    main_story_content: t("Main_Story_Content"),
     result_title: t("Result_Title"),
-    result_paragraph_1: t("Result_Paragraph_1_Content"),
-    result_paragraph_2: t("Result_Paragraph_2_Content"),
+    result_content: t("Result_Content"),
     working_with_title: t("Working_with_Title"),
   };
 
