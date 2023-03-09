@@ -39,8 +39,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="wrapper">
-        <div className="header">
+      <div className="wrapper">
+        <header className="header">
           <img className="header__logo" src={Logo} alt="logo" />
           <div className="header__menu">
             {(toggleMenu || screenWidth > 1024) && (
@@ -72,8 +72,8 @@ const Header = () => {
           >
             <img src={MenuOpen} alt="open menu" />
           </button>
-        </div>
-      </header>
+        </header>
+      </div>
     </>
   );
 };

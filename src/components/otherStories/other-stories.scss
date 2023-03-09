@@ -1,0 +1,121 @@
+.other-stories {
+    background-color: $color-light-gray;
+    padding: 40px 0;
+
+    &__text {
+        font-weight: 400;
+        color: $color-light-black;
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        font-weight: 700;
+        color: $color-light-black;
+        font-size: 34px;
+        line-height: 48px;
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        color: $color-light-black;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    &__desc {
+        display: block;
+        font-weight: 400;
+        color: $color-light-black;
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    &__item {
+        background-color: $color-beige;
+        padding: 32px 24px;
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 4px 4px 4px 0;
+        color: $color-light-black;
+        font-size: 18px;
+        line-height: 24px; 
+        
+        &:focus-visible {
+            outline: none;
+            text-decoration: underline;
+            box-shadow: 0 0 0 2px $color-green;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__svg {
+        vertical-align: middle;
+        width: 12px;
+        height: 20px;
+        margin-left: 22px;
+    }
+
+    @include size-laptop() { 
+        padding: 160px 0;
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 64px;
+        }
+
+        &__item {
+            padding: 64px;
+            margin-bottom: 0;
+        }
+
+        &__text {
+            font-size: 28px;
+            line-height: 48px;
+        }
+
+        &__title {
+            font-size: 72px;
+            line-height: 80px;
+            margin-bottom: 80px;
+        }
+
+        &__subtitle {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 48px;
+        }
+
+        &__desc {
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 48px;
+        }
+
+        &__link {
+            padding: 10px 10px 10px 0;
+            font-size: 20px;
+            line-height: 40px;        }
+
+        &__svg {
+            width: 14px;
+            height: 24px;
+            margin-left: 42px;
+        }
+    }
+}
