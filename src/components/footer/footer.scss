@@ -72,6 +72,12 @@
         }
     }
 
+    &__logo:focus-visible {
+        outline: none;
+        text-decoration: underline;
+        box-shadow: 0 0 0 2px $color-green;
+    }
+
     @include size-tablet() {
         padding: 160px 0 105px;
 

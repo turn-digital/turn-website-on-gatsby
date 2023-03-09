@@ -24,12 +24,12 @@ const Footer = (props) => {
       <footer className='footer'>
         <div className='wrapper'>
           <div className="footer__box">
-          <img className='footer__logo' src={Logo} alt="logo"/>
+        <Link className='footer__logo' to="/"><img src={Logo} alt="logo"/></Link>
           <nav className='footer__nav'>
             <Link className='footer__link' to="/">Home</Link>
-            <Link className='footer__link' to="/services">Story</Link>
-            <Link className='footer__link' to="/services">Services</Link>
-            <Link className='footer__link' to="/contacts">Contacts</Link>
+            <Link className='footer__link' to="/#story">Story</Link>
+            <Link className='footer__link' to="/#services">Services</Link>
+            <Link className='footer__link' to="/#contacts">Contacts</Link>
           </nav>          
           </div>
 

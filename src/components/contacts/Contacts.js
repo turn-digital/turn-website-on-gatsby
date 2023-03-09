@@ -4,7 +4,7 @@ const Contacts = (props) => {
   const { tag, header, content, name, phone, email } = props.contactsInfo;
   return (
     <>
-      <section className="contacts">
+      <section id="contacts" className="contacts">
         <div className="wrapper">
           <p className="contacts__text">{tag}</p>
           <h2 className="contacts__title">{header}</h2>

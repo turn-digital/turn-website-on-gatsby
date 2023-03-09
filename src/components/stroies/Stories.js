@@ -8,6 +8,7 @@ import imageFiveth from "../../assets/images/trl.png";
 import imageSixth from "../../assets/images/galerijaCentrs.png";
 import imageSeventh from "../../assets/images/eParaksts.png";
 import imageEight from "../../assets/images/eSilva.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Stories = (props) => {
   const {
@@ -23,7 +24,7 @@ const Stories = (props) => {
   } = props.storyInfo;
   return (
     <>
-      <section className="stories">
+      <section id="story" className="stories">
         <div className="wrapper">
           <p className="stories__text">{tag}</p>
           <h2 className="stories__title">{title}</h2>
@@ -37,19 +38,7 @@ const Stories = (props) => {
                   to={"/digital-transformation"}
                 >
                   {Story_Button_Text}
-                  <svg
-                    className="stories__svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="32"
-                    viewBox="0 0 19 32"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.68908 0L0.200195 2.66667L13.3558 16L0.200195 29.3333L2.68908 32L18.6891 16L2.68908 0Z"
-                      fill="#54B20E"
-                    />
-                  </svg>
+                  <StaticImage className="stories__svg" src="../../assets/images/svg/arrow-right.svg" alt="arrow right" />
                 </Link>
               </div>
               <div className="stories__block-grid stories__block-grid--mob">
@@ -75,19 +64,7 @@ const Stories = (props) => {
               <p className="stories__desc">{Story2Content}</p>
               <Link className="stories__link" to={"/user-centric-approach"}>
               {Story_Button_Text}
-                <svg
-                  className="stories__svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="32"
-                  viewBox="0 0 19 32"
-                  fill="none"
-                >
-                  <path
-                    d="M2.68908 0L0.200195 2.66667L13.3558 16L0.200195 29.3333L2.68908 32L18.6891 16L2.68908 0Z"
-                    fill="#54B20E"
-                  />
-                </svg>
+              <StaticImage className="stories__svg" src="../../assets/images/svg/arrow-right.svg" alt="arrow right" />
               </Link>
               <div className="stories__block-small">
                 <img className="stories__img" src={imageFourth} alt="cfla" />
@@ -99,19 +76,7 @@ const Stories = (props) => {
               <p className="stories__desc">{Story3Content}</p>
               <Link className="stories__link" to={"/website-redesign"}>
               {Story_Button_Text}
-                <svg
-                  className="stories__svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="32"
-                  viewBox="0 0 19 32"
-                  fill="none"
-                >
-                  <path
-                    d="M2.68908 0L0.200195 2.66667L13.3558 16L0.200195 29.3333L2.68908 32L18.6891 16L2.68908 0Z"
-                    fill="#54B20E"
-                  />
-                </svg>
+              <StaticImage className="stories__svg" src="../../assets/images/svg/arrow-right.svg" alt="arrow right" />
               </Link>
               <div className="stories__block-grid stories__block-grid--bottom">
                 <img

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Hero = (props) => {
   const {
@@ -19,9 +20,7 @@ const Hero = (props) => {
               to="/"
             >
               {Hero_Button_Text}
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="32" viewBox="0 0 19 32" fill="none">
-                <path d="M2.68908 0L0.200195 2.66667L13.3558 16L0.200195 29.3333L2.68908 32L18.6891 16L2.68908 0Z" fill="#54B20E"/>
-              </svg>
+              <StaticImage className="hero__svg" src="../../assets/images/svg/arrow-right.svg" alt="arrow right" />
             </Link>
           </div>
         </div>

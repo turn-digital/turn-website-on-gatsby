@@ -1,11 +1,12 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Services = (props) => {
   const { tag, title, practicalResultsTitle, practicalResultsContent } =
     props.servicesInfo;
   return (
     <>
-      <section className="services">
+      <section id="services" className="services">
         <div className="services__bg-top">
           <div className="wrapper">
             <p className="services__text services__text--white">{tag}</p>
@@ -22,9 +23,7 @@ const Services = (props) => {
                   <ul className="services__tags">
                     {card.tags.split(",").map((tag) => (
                       <li className="services__desc services__desc--margin" key={tag}>
-                        <svg className="services__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.529785 7.97L7.99979 0.5L15.4698 7.97L7.99979 15.44L0.529785 7.97ZM7.99979 12.155L12.1848 7.97L7.99979 3.785L3.81479 7.97L7.99979 12.155Z" fill="#54B20E"/>
-                        </svg>
+                        <StaticImage className="services__svg" src="../../assets/images/svg/romb.svg" alt="romb" />
                         {tag}
                       </li>
                     ))}
