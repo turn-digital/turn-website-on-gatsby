@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 import Contacts from "../components/contacts/Contacts";
 import Layout from "../components/Layout";
 import Head from "../components/head/Head";
-import OtherStories from "../components/otherStories/otherStories";
+import OtherStories from "../components/otherStories/OtherStories";
 import MainStory from "../components/mainStory/MainStory";
 
 const DigitalTransformation = (props) => {
