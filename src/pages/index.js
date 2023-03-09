@@ -66,6 +66,7 @@ const Home = (props) => {
     Story1Content: t("Story_1_Content"),
     Story2Content: t("Story_2_Content"),
     Story3Content: t("Story_3_Content"),
+    Story_Button_Text: t("Story_Button_Text")
   };
 
   const contactsInfo = {
@@ -99,6 +100,11 @@ const Home = (props) => {
     Card2Content: t("Care_Card_2_Content"),
   };
 
+  const hero = {
+    Hero_Title: t("Hero_Title"),
+    Hero_Button_Text: t("Hero_Button_Text"),
+  };
+
   return (
     <>
       <Layout />
@@ -107,7 +113,7 @@ const Home = (props) => {
         description={"Hello this is the home page of Turn.lv"}
       />
       <main>
-        <Hero />
+        <Hero hero={hero}/>
         <Cta ctaInfo={ctaInfo} />
         <Services cardsInfo={cardsInfo} servicesInfo={servicesInfo} />
         <Stories storyInfo={storyInfo} />

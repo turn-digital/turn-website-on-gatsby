@@ -36,6 +36,7 @@
   "Story_1_Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac leo ut lectus porta sagittis ut a magna. Suspendisse sagittis lectus vitae lectus tincidunt, id fringilla lorem imperdiet. Donec orci dui, pharetra gravida pretium non, auctor sit amet justo. Nullam quis sodales mauris, ac dignissim metus. Sed pharetra est mattis quam pulvinar rhoncus. In sed dignissim mauris.",
   "Story_2_Content": "One of our core values is people. We put strong focus and effort on making digital services and products easily accessible, usable and comprehensible for everyone. ",
   "Story_3_Content": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia. ",
+  "Story_Button_Text": "Izlasīt visu stāstu",
 
   "Contacts_Tag": "Contacts",
   "Contacts_Header": "Get in touch",
@@ -61,5 +62,8 @@
   "Footer_SIA": "SIA \"Turn Digital\"Reg. Nr: 40203026165",
   "Footer_BANK": "Bank: Swedbank A/S, S.W.I.F.T.: HABALV22",
   "Footer_ACCOUNT": "Account: LV48HABA0551042639577",
-  "Footer_Copyright": "© 2023 Turn Digital, Latvia"
+  "Footer_Copyright": "© 2023 Turn Digital, Latvia",
+
+  "Hero_Title": "We’ll get it done. Together.",
+  "Hero_Button_Text": "Show me how"
 }

@@ -19,6 +19,7 @@ const Stories = (props) => {
     Story1Content,
     Story2Content,
     Story3Content,
+    Story_Button_Text
   } = props.storyInfo;
   return (
     <>
@@ -35,7 +36,7 @@ const Stories = (props) => {
                   className="stories__link stories__link--margin"
                   to={"/digital-transformation"}
                 >
-                  Izlasīt visu stāstu
+                  {Story_Button_Text}
                   <svg
                     className="stories__svg"
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +74,7 @@ const Stories = (props) => {
               <h3 className="stories__subtitle">{Story2Title}</h3>
               <p className="stories__desc">{Story2Content}</p>
               <Link className="stories__link" to={"/user-centric-approach"}>
-                Izlasīt visu stāstu
+              {Story_Button_Text}
                 <svg
                   className="stories__svg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +98,7 @@ const Stories = (props) => {
               <h3 className="stories__subtitle">{Story3Title}</h3>
               <p className="stories__desc">{Story3Content}</p>
               <Link className="stories__link" to={"/website-redesign"}>
-                Izlasīt visu stāstu
+              {Story_Button_Text}
                 <svg
                   className="stories__svg"
                   xmlns="http://www.w3.org/2000/svg"

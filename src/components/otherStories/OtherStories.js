@@ -11,7 +11,6 @@ const OtherStories = (props) => {
     story1_button_text,
     story2_button_text,
   } = props.otherStoriesInfo;
-  console.log(props)
 
   return (
     <>
