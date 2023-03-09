@@ -1,0 +1,30 @@
+{
+  "Story_Header": "Website-redesign",
+  "Paragraph_1_Content": "We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work. Thanks to the e-Saeima platform, plenary sittings can now be held remotely, with MPs participating from outside the parliament premises.",
+  "Paragraph_2_Content": "At the time when the platform was created, the world was different, it was the start of the pandemic, Zoom or other online meeting platforms were not so commonly used as today. Every business was rushing to the online environment, ecommerce was starting to grow exponentially. Even traditional establishments as the parliament had to find a way how to continue the work in the lockdown situation. Actions needed to be taken on the spot.",
+  "Paragraph_3_Content": "The parliament of Latvia consists of 100 members, youngest beeing 26 and the oldest 77 years old, with different educational and computer literacy levels. Not only computer skills, but also accessibility requreiments had to be taken into account when designing the platform.",
+  "Paragraph_4_Content": "Other constraint was that Rules of Procedure of the Parliament had to be followed thoughtfully when designing the system, and these rules was created long time ago and for offline style of work of course. Business processes were quite complicated as there are several ways how voting can be executed, and even different kind of vote counting is applied in Parliament based on use case. All of this highly regulated process had to be taken into account.",
+  "Paragraph_5_Content": "One of this project’s success criteria and even critical pillar was highly involved team from the Parliament, the executive management. Those were poeple who sincerely wanted a good product to be developed and even spent their evenings devoted to the project.",
+  "Paragraph_6_Content": "We created a close-knit working process, that consisted of three components - regular progress update meetings, daily standups twice per day for the project’s task force and iterative development approach. Also user involvement was a must. Thanks to this work process we were able to deliver first prototype in 1,5 week time, as soon as it was approved by the management, interactive prototype was created and presented to end-users (the members of the Parliament) for evaluation and improvements. As soon as as the feedback was collected, changes done, the prototype was ready to be shipped to implementation. It all took just around 2 weeks calendar time.",
+  "Paragraph_7_Content": "The platform consists of 3 interfaces - 1 for end-users and 2 administrative interfaces. Due to the time restrictions all focus was set on the end-user interface, other interfaces were made just functional and more energy was put into training people to use these interfaces, not to polish them.",
+  "Paragraph_8_Content": "Other success criteria was the use of ready-made design system. There was no need to design smallest elements, prototype was created based on already-made elements, just color palette and styling was applied on top of it.",
+
+  "Paragraph_Title_1": "Background",
+  "Paragraph_Title_2": "Challenges",
+  "Paragraph_Title_3": "Success criteria",
+
+  "Result_Title": "Result",
+  "Result_Paragraph_1_Content": "We are proud to say that the Parliament was still using the platform though restrictions had been lifted and work could be continued old-school way. Plenary sitting amount that was held via the platform is quite high.",
+  "Result_Paragraph_2_Content": "Even some improvements was done to the platform later on that allowed to organize HIgh Court judge elections. If in real life this event could take full day or couple of days, the platform allowed to shorten the time spend at least twice.",
+
+  "Working_with_Title": "Who are we working with",
+
+  "OtherStories_Tag": "Experience",
+  "OtherStories_Header": "Other stories",
+  "OtherStories_Title_1": "Introducing user-centric approach in a financial institution",
+  "OtherStories_Title_2": "Business system redesign",
+  "OtherStories_Content_1": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "OtherStories_Content_2": "Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.Teikums, kas papildina. Lorem ipsum dolor sit amet, consectetur adipiscing.",
+  "OtherStories_Button_Text_1": "Izlasīt visu stāstu",
+  "OtherStories_Button_Text_2": "Izlasīt visu stāstu"
+}

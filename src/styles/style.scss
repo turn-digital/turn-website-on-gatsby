@@ -13,14 +13,14 @@
 @import "../components/careInfo/care-info";
 
 .wrapper {
-    @include container();
+  @include container();
 }
 
 body {
-    font-family: $font-primary;
-    font-weight: 400;
+  font-family: $font-primary;
+  font-weight: 400;
 }
 
 main {
-    overflow: hidden;
+  overflow: hidden;
 }
