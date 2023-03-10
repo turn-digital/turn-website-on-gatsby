@@ -4,8 +4,10 @@ const StoryResult = (props) => {
   console.log(props);
   return (
     <>
-      <div>{props.title}</div>
-      <div dangerouslySetInnerHTML={{ __html: props.content }}></div>
+      <div className="main-story__result">
+        <h3>{props.title}</h3>
+        <div dangerouslySetInnerHTML={{ __html: props.content }}></div>
+      </div>
     </>
   );
 };

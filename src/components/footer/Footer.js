@@ -26,10 +26,10 @@ const Footer = (props) => {
           <div className="footer__box">
         <Link className='footer__logo' to="/"><img src={Logo} alt="logo"/></Link>
           <nav className='footer__nav'>
-            <Link className='footer__link' to="/">Home</Link>
-            <Link className='footer__link' to="/#story">Story</Link>
-            <Link className='footer__link' to="/#services">Services</Link>
-            <Link className='footer__link' to="/#contacts">Contacts</Link>
+            <Link activeClassName="footer__link--active" className='footer__link' to="/">Home</Link>
+            <Link activeClassName="footer__link--active" className='footer__link' to="/#story">Story</Link>
+            <Link activeClassName="footer__link--active" className='footer__link' to="/#services">Services</Link>
+            <Link activeClassName="footer__link--active" className='footer__link' to="/#contacts">Contacts</Link>
           </nav>          
           </div>
 

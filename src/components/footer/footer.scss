@@ -22,6 +22,10 @@
         line-height: 40px;
         border-bottom: 2px solid transparent;
 
+        &--active {
+            border-bottom: 2px solid $color-green;
+        }
+
         &:hover {
             border-bottom: 2px solid $color-green;
         }
