@@ -21,10 +21,10 @@ const Header = () => {
              shouldCloseOnEsc={true}
              preventScroll={true}>
               <nav className="header__nav header__nav--mob">
-              <Link className="header__link" to="/">Home</Link>
-              <Link className="header__link" to="/#story">Story</Link>
-              <Link className="header__link" to="/#services">Services</Link>
-              <Link className="header__link" to="/#contacts">Contacts</Link>
+              <Link className="header__link" to="/" onClick={() => setToggleMenu(!toggleMenu)}>Home</Link>
+              <Link className="header__link" to="/#story" onClick={() => setToggleMenu(!toggleMenu)}>Story</Link>
+              <Link className="header__link" to="/#services" onClick={() => setToggleMenu(!toggleMenu)}>Services</Link>
+              <Link className="header__link" to="/#contacts" onClick={() => setToggleMenu(!toggleMenu)}>Contacts</Link>
                 <button
                   className="header__button header__button--close"
                   onClick={() => setToggleMenu(!toggleMenu)}
