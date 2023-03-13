@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import Logo from "../../assets/images/logo-header.png";
 import MenuOpen from "../../assets/images/menu.png";
 import ReactModal from "react-modal";
-
-const isBrowser = typeof window !== "undefined";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -20,7 +18,8 @@ const Header = () => {
              isOpen={toggleMenu}
              contentLabel={"Navigation modal"}
              shouldFocusAfterRender={true}
-             shouldCloseOnOverlayClick={true}>
+             shouldCloseOnEsc={true}
+             preventScroll={true}>
               <nav className="header__nav header__nav--mob">
               <Link className="header__link" to="/">Home</Link>
               <Link className="header__link" to="/#story">Story</Link>
