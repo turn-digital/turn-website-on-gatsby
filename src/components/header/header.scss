@@ -63,6 +63,12 @@
         }
     }
 
+    &__logo:focus-visible {
+        outline: none;
+        text-decoration: underline;
+        box-shadow: 0 0 0 2px $color-green;
+    }
+
     @include size-laptop() {
         padding: 48px 0 8px;
         &__button {

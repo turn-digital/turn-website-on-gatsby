@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import Footer from "../components/footer/Footer";
 import Layout from "../components/Layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 const NotFoundPage = (props) => {
   const { t } = useTranslation();
@@ -26,9 +27,9 @@ const NotFoundPage = (props) => {
     <>
     <div class="error-page">
     <Layout />
-    <main>
-      <h1>Page not found</h1>
-      <p>
+    <main className="error-page__block">
+    <div className="wrapper">
+      {/* <p>
         Sorry 😔, we couldn’t find what you were looking for.
         <br />
         {process.env.NODE_ENV === "development" ? (
@@ -40,7 +41,22 @@ const NotFoundPage = (props) => {
         ) : null}
         <br />
         <Link to="/">Go home</Link>.
-      </p>
+      </p> */}
+      <p className="error-page__text">Oops! Page not found</p>
+      <h1 className="error-page__title">404 error</h1>
+      <p className="error-page__text">The page you are looking for might have been removed,  had its name changed or is temporarily unavailable</p>
+      <Link
+          className="error-page__link"
+          to="/"
+        >
+          Go to homepage
+          <StaticImage className="error-page__svg" src="../assets/images/svg/arrow-right.svg" alt="arrow right" />
+        </Link>
+    </div>
+    <div className="error-page__circle error-page__circle--first"></div>
+      <div className="error-page__circle error-page__circle--second"></div>
+      <div className="error-page__circle error-page__circle--third"></div>
+      <div className="error-page__circle error-page__circle--fourth"></div>
     </main>
     </div>
     <Footer footerInfo={footerInfo} />

@@ -4,4 +4,116 @@
     header {
         background-color: $color-beige;
     }
+
+    &__block {
+        padding: 64px 0;
+        position: relative;
+    }
+
+    &__title {
+        margin: 32px 0;
+        color: $color-light-black;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px
+    }
+
+    &__text {
+        color: $color-light-black;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 4px;
+        color: $color-light-black;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-decoration-line: underline;
+        margin-top: 48px;
+    
+    
+        &:focus-visible  {
+          outline: none;
+          text-decoration: underline;
+          box-shadow: 0 0 0 2px $color-green;
+        }
+    
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    
+      &__svg {
+        width: 12px;
+        height: 20px;
+        margin-left: 24px;
+        vertical-align: middle;
+      }
+
+   
+
+    @include size-laptop() {
+       &__block {
+        padding: 160px 0;
+       }
+    
+        &__title {
+            margin: 48px 0;
+            font-size: 120px;
+            line-height: 144px;  
+        }
+    
+        &__text {
+            font-size: 28px;
+            line-height: 48px;
+        }
+
+        &__link {
+            padding: 10px;
+            font-size: 32px;
+            line-height: 48px;
+            margin-top: 120px;
+        }
+
+        &__circle {
+            background: rgba(47, 46, 65, 0.03);
+            border-radius: 50%;
+            position: absolute;
+    
+            &--first {
+                width: 1124px;
+                height: 1124px;
+                right: -740px;
+                bottom: -490px;
+            }
+            &--second {
+                width: 870px;
+                height: 870px;
+                right: -580px;
+                bottom: -360px;
+            }
+            &--third {
+                width: 606px;
+                height: 606px;
+                right: -410px;
+                bottom: -226px
+            }
+            &--fourth {
+                width: 348px;
+                height: 348px;
+                right: -240px;
+                bottom: -100px;
+            }
+        }
+
+        &__svg {
+            width: 18px;
+            height: 32px;
+            margin-left: 44px;
+        }
+    }
 }

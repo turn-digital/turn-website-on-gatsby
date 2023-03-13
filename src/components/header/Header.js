@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className="wrapper">
         <header className="header">
-          <img className="header__logo" src={Logo} alt="logo" />
+          <Link className="header__logo"  to="/"><img src={Logo} alt="logo" /></Link>
           <div className="header__menu">
             <div className="header__menu--mob">
             <ReactModal
