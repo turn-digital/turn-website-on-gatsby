@@ -38,6 +38,10 @@
         right: 0;
         z-index: 1;
         flex-direction: column;
+
+        &--desc {
+            display: none;
+        }
     }
 
     &__link {
@@ -70,11 +74,37 @@
             background-color: transparent;
             position: relative;
             flex-direction: row;
+
+            &--desc {
+                display: block;
+            }
+
+            &--mob {
+                display: none;
+            }
         }
 
         &__link {
             margin-left: 32px;
         }
+
+        &__button--mob {
+            display: none;
+        }
+
+        &__menu--mob {
+            display: none;
+        }
     }
 
+}
+
+.ReactModal__Content {
+    position: unset !important;
+}
+
+@include size-laptop() { 
+    .ReactModal__Overlay {
+        display: none;
+    }
 }
