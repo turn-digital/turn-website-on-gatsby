@@ -13,6 +13,7 @@
 @import "../components/contacts/contacts";
 @import "../components/careInfo/care-info";
 @import "../components/mainStory/mainStory";
+@import "../pages/404";
 
 .wrapper {
   @include container();

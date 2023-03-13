@@ -16,7 +16,7 @@ const OtherStories = (props) => {
 
   return (
     <>
-    <section className="other-stories">
+    <section id="stories" className="other-stories">
       <div className="wrapper">
         <p className="other-stories__text">{tag}</p>
         <h2 className="other-stories__title">{title}</h2>
