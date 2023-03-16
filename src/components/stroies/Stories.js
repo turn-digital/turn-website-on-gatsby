@@ -26,7 +26,10 @@ const Stories = (props) => {
     <>
       <section id="story" className="stories">
         <div className="wrapper">
+          <div>
+          <StaticImage  className="icon__slash" src="../../assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="stories__text">{tag}</p>
+          </div>
           <h2 className="stories__title">{title}</h2>
           <ul className="stories__list">
             <li className="stories__item stories__item--first stories__box">

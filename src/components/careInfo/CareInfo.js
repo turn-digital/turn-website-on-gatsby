@@ -9,7 +9,10 @@ const CareInfo = (props) => {
     <>
       <section className="care-info">
         <div className="wrapper">
+        <div>
+          <StaticImage  className="icon__slash" src="../../assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="care-info__text">{tag}</p>
+          </div>
           <h2 className="care-info__title">{title}</h2>
           <ul className="care-info__list">
             <li className="care-info__item">

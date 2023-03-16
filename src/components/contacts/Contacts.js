@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Contacts = (props) => {
   const { tag, header, content, name, phone, email } = props.contactsInfo;
@@ -6,7 +7,10 @@ const Contacts = (props) => {
     <>
       <section id="contacts" className="contacts">
         <div className="wrapper">
+        <div>
+          <StaticImage  className="icon__slash" src="../../assets/images/svg/slash-line.svg" alt="slash line" />
           <p className="contacts__text">{tag}</p>
+          </div>
           <h2 className="contacts__title">{header}</h2>
           <p className="contacts__text contacts__text--margin">{content}</p>
          <ul>

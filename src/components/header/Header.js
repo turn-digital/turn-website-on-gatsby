@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import Logo from "../../assets/images/logo-header.png";
-import MenuOpen from "../../assets/images/menu.png";
+import { StaticImage } from "gatsby-plugin-image";
 import ReactModal from "react-modal";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className="wrapper">
         <header className="header">
-          <Link className="header__logo"  to="/"><img src={Logo} alt="logo" /></Link>
+          <Link className="header__logo"  to="/"><img className="header__img" src={Logo} alt="logo" /></Link>
           <div className="header__menu">
             <div className="header__menu--mob">
             <ReactModal
@@ -46,7 +46,7 @@ const Header = () => {
             className="header__button header__button--mob"
             onClick={() => setToggleMenu(!toggleMenu)}
           >
-            <img src={MenuOpen} alt="open menu" />
+            <StaticImage  src="../../assets/images/svg/menu.svg" alt="menu open" />
           </button>
         </header>
       </div>

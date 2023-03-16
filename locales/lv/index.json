@@ -19,8 +19,8 @@
   "Card_4_Content": "We teach you about web accessibility requirements, practices and its’ implementation. We help you to gain understanding how your products and services can be made more sustainable.",
 
   "Card_1_Tags": "prototyping, training, facilitating",
-  "Card_2_Tags": "UX, API, Research, Front-End",
-  "Card_3_Tags": "consulting, implementing, plugins",
+  "Card_2_Tags": "UX,Research,API,Front-End",
+  "Card_3_Tags": "consulting,plugins,implementing",
   "Card_4_Tags": "audit, training, accessible coding",
 
   "Practical_Results_Title": "Practical results",
@@ -33,10 +33,10 @@
   "Story_2_Title": "Introducing user-centric approach in a financial institution",
   "Story_3_Title": "Unusual website redesign",
 
-  "Story_1_Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac leo ut lectus porta sagittis ut a magna. Suspendisse sagittis lectus vitae lectus tincidunt, id fringilla lorem imperdiet. Donec orci dui, pharetra gravida pretium non, auctor sit amet justo. Nullam quis sodales mauris, ac dignissim metus. Sed pharetra est mattis quam pulvinar rhoncus. In sed dignissim mauris.",
+  "Story_1_Content": "We are eager to work on projects that requires a remarkable shift of the status-quo in a short period of time. We have had honour to participate in several such projects, but the most recognisable is the development and implementation of “e-Saeima”, making the parliament of Latvia one of the first parliaments in the world that could fully shift to remote work.",
   "Story_2_Content": "One of our core values is people. We put strong focus and effort on making digital services and products easily accessible, usable and comprehensible for everyone. ",
   "Story_3_Content": "We like to be innovative and play. We use different practices and tools to plan and prepare for existing business system or website redesigns. One of our recent projects was the website redesign for the Ombudsman of the Republic of Latvia. ",
-  "Story_Button_Text": "Izlasīt visu stāstu",
+  "Story_Button_Text": "Read more",
 
   "Contacts_Tag": "Contacts",
   "Contacts_Header": "Get in touch",

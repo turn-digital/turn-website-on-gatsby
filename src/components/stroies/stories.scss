@@ -3,6 +3,7 @@
     padding: 40px 0;
 
     &__text {
+        display: inline-block;
         font-weight: 400;
         color: $color-light-black;
         font-size: 20px;
@@ -42,6 +43,7 @@
         font-size: 18px;
         line-height: 24px; 
         margin-bottom: 44px;  
+        text-underline-offset: 4px;
         
         &:focus-visible {
             outline: none;

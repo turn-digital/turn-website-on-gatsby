@@ -69,6 +69,10 @@
         box-shadow: 0 0 0 2px $color-green;
     }
 
+    &__img {
+        max-height: 32px;
+    }
+
     @include size-laptop() {
         padding: 48px 0 8px;
         &__button {
@@ -100,6 +104,10 @@
 
         &__menu--mob {
             display: none;
+        }
+
+        &__img {
+            max-height: 40px;
         }
     }
 

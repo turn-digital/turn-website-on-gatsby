@@ -1,6 +1,6 @@
 .services {
     &__bg-top {
-        padding: 64px 0 320px;
+        padding: 64px 0 280px;
         background-color: $color-light-black;
     }
 
@@ -10,6 +10,7 @@
     }
 
     &__title {
+        margin-top: 32px;
         color: $color-light-black;
         font-weight: 700;
         font-size: 34px;
@@ -26,13 +27,13 @@
     }
 
     &__text {
+        display: inline-block;
         color: $color-light-black;
         font-weight: 400;
         font-size: 20px;
         line-height: 36px;
 
         &--white {
-            margin-bottom: 32px;
             color: $color-light-gray;
         }
     }
@@ -73,10 +74,11 @@
     &__tags {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 4px;
     }
 
     &__svg {
-        margin-right: 8px;
+        margin-right: 12px;
         vertical-align: middle;
     }
 

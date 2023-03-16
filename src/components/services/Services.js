@@ -9,7 +9,10 @@ const Services = (props) => {
       <section id="services" className="services">
         <div className="services__bg-top">
           <div className="wrapper">
-            <p className="services__text services__text--white">{tag}</p>
+            <div>
+              <StaticImage className="icon__slash"  src="../../assets/images/svg/slash-line--white.svg" alt="slash line" />
+              <p className="services__text services__text--white">{tag}</p>
+            </div>
             <h2 className="services__title services__title--white">{title}</h2>
           </div>
         </div>

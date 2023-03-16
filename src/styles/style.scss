@@ -31,3 +31,14 @@ html {
 main {
   overflow: hidden;
 }
+
+.icon__slash {
+  width: 32px;
+  height: 32px;
+
+  @include size-laptop() {
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+  }
+}

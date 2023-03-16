@@ -16,6 +16,8 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
     text-decoration-line: underline;
 
 
@@ -49,6 +51,8 @@
       padding: 10px;
       font-size: 32px;
       line-height: 48px;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
     }
 
     &__svg {

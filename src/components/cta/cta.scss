@@ -16,9 +16,8 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 36px;
+        display: inline-block;
     }
-
-   
 
     @include size-laptop() {
         padding: 240px 0 264px;
