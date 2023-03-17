@@ -20,9 +20,17 @@
     }
 
     &__nav {
+        [aria-current="page"] {
+            border-bottom: 2px solid $color-green;
+        }
+
         &--desc {
             display: none;
         }
+    }
+
+    .active {
+        border-bottom: 2px solid $color-green;
     }
 
     &__menu--mob {
@@ -30,6 +38,8 @@
             &__link {
                 color: $color-light-gray;
                 margin-bottom: 24px;
+                font-size: 16px;
+                line-height: 32px;
             }
 
             &__nav {
@@ -55,8 +65,8 @@
         text-decoration: none;
         color: $color-light-black;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 40px;
         border-bottom: 2px solid transparent;
 
         &:hover {
@@ -103,6 +113,7 @@
 
         &__link {
             margin-left: 32px;
+            padding-bottom: 6px;
         }
 
         &__button--mob {

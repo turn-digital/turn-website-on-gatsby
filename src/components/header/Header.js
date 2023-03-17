@@ -3,9 +3,11 @@ import { Link } from "gatsby";
 import Logo from "../../assets/images/logo-header.png";
 import { StaticImage } from "gatsby-plugin-image";
 import ReactModal from "react-modal";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const url = typeof window !== 'undefined' ? window.location.href : '';
 
   return (
     <>
@@ -32,17 +34,17 @@ const Header = () => {
              </div>
               <nav className="header__nav header__nav--mob">
               <Link className="header__link" to="/" onClick={() => setToggleMenu(!toggleMenu)}>Home</Link>
-              <Link className="header__link" to="/#story" onClick={() => setToggleMenu(!toggleMenu)}>Story</Link>
-              <Link className="header__link" to="/#services" onClick={() => setToggleMenu(!toggleMenu)}>Services</Link>
-              <Link className="header__link" to="/#contacts" onClick={() => setToggleMenu(!toggleMenu)}>Contacts</Link>
+              <AnchorLink className={((url.match('website-redesign') || url.match('user-centric-approach') || url.match('digital-transformation')) ? (`header__link active`) : (`header__link`) )} to="/#story" onClick={() => setToggleMenu(!toggleMenu)}>Story</AnchorLink>
+              <AnchorLink className="header__link" to="/#services" onClick={() => setToggleMenu(!toggleMenu)}>Services</AnchorLink>
+              <AnchorLink className="header__link" to="/#contacts" onClick={() => setToggleMenu(!toggleMenu)}>Contacts</AnchorLink>
               </nav>
             </ReactModal>
             </div>
             <nav className="header__nav header__nav--desc">
               <Link className="header__link" to="/">Home</Link>
-              <Link className="header__link" to="/#story">Story</Link>
-              <Link className="header__link" to="/#services">Services</Link>
-              <Link className="header__link" to="/#contacts">Contacts</Link>
+              <AnchorLink className={((url.match('website-redesign') || url.match('user-centric-approach') || url.match('digital-transformation')) ? (`header__link active`) : (`header__link`) )} to="/#story" onClick={() => setToggleMenu(!toggleMenu)}>Story</AnchorLink>
+              <AnchorLink className="header__link" to="/#services">Services</AnchorLink>
+              <AnchorLink className="header__link" to="/#contacts">Contacts</AnchorLink>
             </nav>
             
           </div>
