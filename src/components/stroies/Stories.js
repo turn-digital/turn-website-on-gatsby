@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
-import imageFirst from "../../assets/images/eSaeima.png";
-import imageSecond from "../../assets/images/tiesibsargs.png";
-import imageThird from "../../assets/images/csp.png";
-import imageFourth from "../../assets/images/cfla.png";
-import imageFiveth from "../../assets/images/trl.png";
-import imageSixth from "../../assets/images/galerijaCentrs.png";
-import imageSeventh from "../../assets/images/eParaksts.png";
-import imageEight from "../../assets/images/eSilva.png";
+import imageFirst from "../../assets/images/svg/eSaeima.svg";
+import imageSecond from "../../assets/images/svg/tiesibsargs.svg";
+import imageThird from "../../assets/images/svg/csp.svg";
+import imageFourth from "../../assets/images/svg/cfla.svg";
+import imageFiveth from "../../assets/images/svg/trl.svg";
+import imageSixth from "../../assets/images/svg/galerijaCentrs.svg";
+import imageSeventh from "../../assets/images/svg/eParaksts.svg";
+import imageEight from "../../assets/images/svg/eSilva.svg";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Stories = (props) => {

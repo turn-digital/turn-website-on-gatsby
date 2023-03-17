@@ -1,8 +1,8 @@
 import React from "react";
 import StoryResult from "../storyResult/StoryResult";
-import imageEsaeima from "../../assets/images/eSaeima--mob.png";
-import imageTiesibsargs from "../../assets/images/tiesibsargs.png";
-import imageCSP from "../../assets/images/csp.png";
+import imageEsaeima from "../../assets/images/svg/eSaeima--mob.svg";
+import imageTiesibsargs from "../../assets/images/svg/tiesibsargs.svg";
+import imageCSP from "../../assets/images/svg/csp.svg";
 
 const MainStory = (props) => {
   const {
