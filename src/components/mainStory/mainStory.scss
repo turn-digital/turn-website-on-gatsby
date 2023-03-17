@@ -10,10 +10,6 @@
     line-height: 64px;
   }
 
-  &__box {
-    margin-right: 32px;
-  }
-
   &__content {
     p {
       color: $color-light-black;
@@ -67,6 +63,10 @@
     text-decoration: underline;
   }
 
+  &__fit {
+    width: 100%;
+  }
+
   @include size-laptop() { 
     padding: 160px 0 120px;
 
@@ -115,6 +115,14 @@
 
     &__list {
       column-gap: 48px;
+    }
+
+    &__fit {
+      width: auto;
+    }
+
+    &__box {
+      margin-right: 32px;
     }
   } 
 

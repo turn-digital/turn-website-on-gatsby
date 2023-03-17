@@ -19,7 +19,9 @@ const NotFoundPage = (props) => {
     address: t("Footer_Address"),
     company_details: t("Footer_Company_Details_Header"),
     SIA: t("Footer_SIA"),
+    REG: t("Footer_REG"),
     BANK: t("Footer_BANK"),
+    SWIFT: t("Footer_SWIFT"),
     ACCOUNT: t("Footer_ACCOUNT"),
     copyright: t("Footer_Copyright"),
   };

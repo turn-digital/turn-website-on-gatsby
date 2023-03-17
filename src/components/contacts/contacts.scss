@@ -12,7 +12,6 @@
     }
 
     &__text {
-        display: inline-block;
         color: $color-light-black;
         font-weight: 400;
         font-size: 20px;
@@ -21,7 +20,11 @@
         margin-bottom: 8px;
         
         &--margin {
-            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+
+        &--inline {
+            display: inline-block;
         }
 
         &--hover {
@@ -53,8 +56,14 @@
         }
     
         &__text {
+            display: inline-block;
             font-size: 28px;
             line-height: 48px;
+
+            &--margin {
+                margin-bottom: 40px;
+                margin-top: 0;
+            }
         }
 
         &__circle {

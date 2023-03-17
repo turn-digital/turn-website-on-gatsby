@@ -55,7 +55,7 @@
 
     &__svg {
         margin-left: 14px;
-        vertical-align: middle;
+        vertical-align: top;
     }
 
     @include size-laptop() {
@@ -94,6 +94,10 @@
             font-size: 20px;
             line-height: 32px;
             margin-left: auto;
+        }
+
+        &__svg {
+            vertical-align: text-top;
         }
 
     }

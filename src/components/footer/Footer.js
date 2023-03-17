@@ -14,7 +14,9 @@ const Footer = (props) => {
     address,
     company_details,
     SIA,
+    REG,
     BANK,
+    SWIFT,
     ACCOUNT,
     copyright,
   } = props.footerInfo;
@@ -59,8 +61,14 @@ const Footer = (props) => {
             <li className='footer__item'>
               <h5 className="footer__title">{company_details}</h5>
               <ul>
-                <li className='footer__text'>{SIA}</li>
-                <li className='footer__text'>{BANK}</li>
+                <li className='footer__text'>
+                  <p className='footer__inline'>{SIA}&nbsp;</p>
+                  <p className='footer__inline'>{REG}&nbsp;</p>
+                </li>
+                <li className='footer__text'>
+                  <p className='footer__inline'>{BANK}&nbsp;</p>
+                  <p className='footer__inline'>{SWIFT}</p>
+                </li>
                 <li className='footer__text'>{ACCOUNT}</li>
               </ul>
             </li>

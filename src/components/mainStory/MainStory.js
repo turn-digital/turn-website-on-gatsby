@@ -16,15 +16,17 @@ const MainStory = (props) => {
   return (
     <>
       <section className="main-story">
-      <div className="wrapper main-story__block">
+      <div className="wrapper">
+      <h1 className="main-story__title">{story_header}</h1>
+      <div className="main-story__block">
         <aside className="main-story__aside">
           <img
+          className="main-story__fit"
             src={imageEsaeima}
             alt="e-Saeima"
           />
         </aside>
         <div className="main-story__box">
-          <h1 className="main-story__title">{story_header}</h1>
           <div className="main-story__content" dangerouslySetInnerHTML={{ __html: main_story_content }}></div>
           <div className="main-story__content"><StoryResult title={result_title} content={result_content} /></div>
           <h3 className="main-story__subtitle">{working_with_title}</h3>
@@ -44,6 +46,7 @@ const MainStory = (props) => {
               />    
             </li>
           </ul>
+        </div>
         </div>
       </div> 
       </section>

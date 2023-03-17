@@ -2,6 +2,7 @@ import React from "react";
 import LogoSchoolio from "../../assets/images/logo-schoolio.png";
 import LogoPieklustamiba from "../../assets/images/logo-pieklustamiba.png";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const CareInfo = (props) => {
   const { tag, title, Card1Content, Card2Content } = props.careInfo;
@@ -16,11 +17,13 @@ const CareInfo = (props) => {
           <h2 className="care-info__title">{title}</h2>
           <ul className="care-info__list">
             <li className="care-info__item">
+            <Link to="https://www.schooliowp.lv" target="_blank">
               <img
                 className="care-info__img"
                 src={LogoSchoolio}
                 alt="logo schoolio WP"
               />
+              </Link>
               <p className="care-info__desc">{Card1Content}</p>
               <a
                 className="care-info__link"
@@ -33,11 +36,13 @@ const CareInfo = (props) => {
               </a>
             </li>
             <li className="care-info__item">
+              <Link to="https://www.pieklustamiba.lv" target="_blank">
               <img
                 className="care-info__img"
                 src={LogoPieklustamiba}
                 alt="logo Pieklustamiba"
               />
+              </Link>
               <p className="care-info__desc">{Card2Content}</p>
               <a
                 className="care-info__link"

@@ -198,6 +198,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 48px;
+            align-items: start;
         }
     }
 }

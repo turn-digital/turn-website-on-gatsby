@@ -13,7 +13,10 @@ const DigitalTransformation = (props) => {
   const contactsInfo = {
     tag: t("Contacts_Tag"),
     header: t("Contacts_Header"),
-    content: t("Contacts_Content"),
+    content_1: t("Contacts_Content_1"),
+    content_2: t("Contacts_Content_2"),
+    content_3: t("Contacts_Content_3"),
+    content_4: t("Contacts_Content_4"),
     name: t("Contacts_Name"),
     phone: t("Contacts_Phone"),
     email: t("Contacts_Email"),
@@ -49,7 +52,9 @@ const DigitalTransformation = (props) => {
     address: t("Footer_Address"),
     company_details: t("Footer_Company_Details_Header"),
     SIA: t("Footer_SIA"),
+    REG: t("Footer_REG"),
     BANK: t("Footer_BANK"),
+    SWIFT: t("Footer_SWIFT"),
     ACCOUNT: t("Footer_ACCOUNT"),
     copyright: t("Footer_Copyright"),
   };
